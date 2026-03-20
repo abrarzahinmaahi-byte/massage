@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+   	body{
+    background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 31%, rgba(0, 0, 0, 1) 62%);
+background-repeat: no-repeat;
+background-size: cover;
+height:100vh ;
+text-align: center;
+   	}
+   	p{
+font-family: "Cairo", sans-serif;  font-style: normal;
+  font-size: 100px;
+  color: whitesmoke;
+   	}
+.glow-button {
+      padding: 25px 60px; /* bigger size */
+      font-size: 2em;      /* bigger font */
+      color: whitesmoke;
+      background: linear-gradient(90deg, rgba(42,123,155,1) 31%, rgba(0,0,0,1) 62%);
+      border: none;
+      border-radius: 16px;  /* slightly bigger radius */
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      box-shadow: 0 0 15px rgba(42,123,155,0.7), 0 0 30px rgba(42,123,155,0.5), 0 0 60px rgba(42,123,155,0.3);
+      transition: 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+       text-decoration: none; 
+    }
+
+    .glow-button::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+      transform: rotate(45deg);
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+    }
+
+    .glow-button:hover::before {
+      opacity: 1;
+      top: -25%;
+      left: -25%;
+    }
+
+    .glow-button:hover {
+      box-shadow: 0 0 30px rgba(42,123,155,0.9), 0 0 60px rgba(42,123,155,0.7), 0 0 90px rgba(42,123,155,0.5);
+      transform: scale(1.1);
+    }
+   </style>
+</head>
+
+<body>
+    <p>
+    	A Little Eid Surprise Inside!!
+    </p>
+     <a href="https://abrarzahinmaahi-byte.github.io/Eid/" class="glow-button">Eid Mubarak</a>
+
+
+
+</body>
+
+</html>
